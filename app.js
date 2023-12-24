@@ -152,8 +152,8 @@ app.get("/states/:stateId/stats/", async (request, response) => {
            sum(deaths) as totalDeaths
            from district where state_id=${stateId};
      `;
-  const stats = await db.get(getTotalScoresQuery);
-  response.send(stats);
+  const totalScores = await db.get(getTotalScoresQuery);
+  response.send(totalScores);
 });
 
 //API 8: Returns an object containing the state name of a district based on the district ID
