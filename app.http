@@ -43,7 +43,7 @@ Content-Type: application/json
 ###
 
 //API 7: Returns the statistics of total cases, cured, active, deaths of a specific state based on state ID
-GET http://localhost:3000/states/12/stats/
+GET http://localhost:3000/states/3/stats/
 ###
 
 //API 8: Returns an object containing the state name of a district based on the district ID
